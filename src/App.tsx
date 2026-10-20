@@ -183,7 +183,8 @@ function Lab() {
     const c = stegoRef.current;
     c.width = image.width;
     c.height = image.height;
-    c.getContext("2d")!.putImageData(
+        const ctx = c.getContext("2d")!;
+    ctx.putImageData(
       new ImageData(new Uint8ClampedArray(stegoBuffer), image.width, image.height),
       0,
       0

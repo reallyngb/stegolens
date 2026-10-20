@@ -28,7 +28,7 @@ export function bufferToCanvas(data: Uint8ClampedArray, w: number, h: number): H
   c.width = w;
   c.height = h;
   const ctx = c.getContext("2d")!;
-  ctx.putImageData(new ImageData(new Uint8ClampedArray(data), w, h), 0, 0);
+  ctx.putImageData(new ImageData(new Uint8ClampedArray(data), w, h), 0, 0); 
   return c;
 }
 
