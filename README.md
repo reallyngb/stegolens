@@ -1,4 +1,4 @@
-﻿# StegaLens
+# StegaLens
 
 **See what steganography actually changes.**
 
@@ -7,7 +7,7 @@ An interactive LSB image steganography laboratory that lets you look inside the 
 Most steganography tools are black boxes: you upload an image, type a message, download a new image, and hope it worked. StegaLens is the opposite. It shows you exactly which bits changed, in which pixels, in which channels, and lets you step through the embedding process one bit at a time.
 
 **Author:** Joel Akinsanya (@reallyngb)  
-**Repository:** https://github.com/reallyngb/stegolens  
+**Repository:** [https://github.com/reallyngb/stegolens](https://github.com/reallyngb/stegolens)  
 **License:** Custom source-available (see LICENSE)
 
 ---
@@ -32,9 +32,9 @@ Most steganography tools are black boxes: you upload an image, type a message, d
 
 ### Live Demo
 You can try StegaLens right now in your browser without installing anything:
-**https://reallyngb.github.io/stegolens/**
+**[https://reallyngb.github.io/stegolens/](https://reallyngb.github.io/stegolens/)**
 
-### Run locally
+### Run locally in 30 seconds
 ```bash
 git clone https://github.com/reallyngb/stegolens.git
 cd stegolens
