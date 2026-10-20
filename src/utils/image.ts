@@ -25,10 +25,13 @@ export async function loadImageFile(file: File): Promise<LoadedImage> {
 
 export function bufferToCanvas(data: Uint8ClampedArray, w: number, h: number): HTMLCanvasElement {
   const c = document.createElement("canvas");
-  c.width = w; c.height = h;
-  c.getContext("2d")!.putImageData(new ImageData(data, w, h), 0, 0);
+  c.width = w;
+  c.height = h;
+  const ctx = c.getContext("2d")!;
+  ctx.putImageData(new ImageData(new Uint8ClampedArray(data), w, h), 0, 0);
   return c;
 }
+
 
 export function bufferToPngBlob(data: Uint8ClampedArray, w: number, h: number): Promise<Blob> {
   return new Promise((resolve, reject) => {

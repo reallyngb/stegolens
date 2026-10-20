@@ -172,7 +172,7 @@ function Lab() {
     c.width = image.width;
     c.height = image.height;
     c.getContext("2d")!.putImageData(
-      new ImageData(image.original, image.width, image.height),
+      new ImageData(new Uint8ClampedArray(image.original), image.width, image.height),
       0,
       0
     );
@@ -184,7 +184,7 @@ function Lab() {
     c.width = image.width;
     c.height = image.height;
     c.getContext("2d")!.putImageData(
-      new ImageData(stegoBuffer, image.width, image.height),
+      new ImageData(new Uint8ClampedArray(stegoBuffer), image.width, image.height),
       0,
       0
     );
